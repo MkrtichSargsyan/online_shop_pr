@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seller</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div>
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a id="seller__id" href="#">Seller</a>
+                </li>
+                <li class="nav__item">
+                    <a id="buyer__id" style="color: white" href="#">Buyer</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="seller__main">
+        <section id="add-product__section">
+            <p class="product__title">Add new product</p>
+            <form>
+                <input class="add-product__section__element" id="product-name__input" type="text"
+                       placeholder="Product name">
+                <input class="add-product__section__element" id="product-price__input" type="number"
+                       placeholder="Product price">
+                <select class="add-product__section__element" id="product-type__input">
+                    <option value="" selected="selected" disabled="disabled">Product type</option>
+                    <option value="1">Toys</option>
+                    <option value="2">Flowers</option>
+                    <option value="3">Books</option>
+                </select>
+            </form>
+
+            <button id="add-product__button">Add</button>
+        </section>
+
+        <section id="show-product__section">
+
+        </section>
+    </main>
+
+    <main id="buyer__main" class="hide">
+        <section class="store__section">
+
+            <nav id="store__section__navigation">
+                <div class="store_section_titles">Show All</div>
+                <div class="store_section_titles">Toys</div>
+                <div class="store_section_titles">Flowers</div>
+                <div class="store_section_titles">Books</div>
+
+            </nav>
+
+            <div id="store__show_product_section">
+
+            </div>
+
+
+        </section>
+
+
+        <section class="cart__section">
+            <div class="shopping__cart__title">Shopping Cart</div>
+
+            <div class="buyed__product__container"></div>
+
+            <div class="total__price"><b></b></div>
+            <div class="checkout">Checkout</div>
+
+        </section>
+
+
+    </main>
+
+    <main id="funny" class="hide">
+        <div>Nothing To Show</div>
+        <img src="joget.gif" alt="Be patient..."/>
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
